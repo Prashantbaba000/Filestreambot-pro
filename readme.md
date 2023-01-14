@@ -69,7 +69,6 @@ then goto the <a href="#mandatory-vars">variables tab</a> for more info on setti
 💥Password Protection.<br>
 💥User Freindly Interface.<br>
 💥Ping check.<br>
-💥User DC Check.<br>
 💥Real time CPU , RAM , Internet usage. <br>
 💥Custom Domain support. <br>
 💥All unwanted code removed. <br>
