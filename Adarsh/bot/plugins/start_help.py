@@ -16,8 +16,8 @@ from pyrogram.types import ReplyKeyboardMarkup
 if MY_PASS:
             buttonz=ReplyKeyboardMarkup(
             [
-                ["start⚡️","help📚","login🔑","DC"],
-                ["Subscribe ❤️","ping📡","status📊"]
+                ["start⚡️","help📚"login]
+  
                         
             ],
             resize_keyboard=True
