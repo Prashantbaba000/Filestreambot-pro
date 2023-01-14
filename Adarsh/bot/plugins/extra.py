@@ -63,20 +63,13 @@ async def start(bot, update):
     
 @StreamBot.on_message(filters.command("list"))
 async def list(l, m):
-    LIST_MSG = "Hi! {} Here is a list of all my commands \n \n 1 . `start⚡️` \n 2. `login🔑` \n 4.`Subscribe ❤️` \n 5. `ping📡` \n 6. `DC` this tells your telegram dc \n 7. `maintainers😎` "
+    LIST_MSG = "Hi! {} Here is a list of all my commands \n \n 1 . `start⚡️` \n 2. `login🔑` \n 4.`Subscribe ❤️` \n 6. `DC` this tells your telegram dc \n 7. `maintainers😎` "
     await l.send_message(chat_id = m.chat.id,
         text = LIST_MSG.format(m.from_user.mention(style="md"))
         
     )
     
-    
-@StreamBot.on_message(filters.regex("ping📡"))
-async def ping(b, m):
-    start_t = time.time()
-    ag = await m.reply_text("....")
-    end_t = time.time()
-    time_taken_s = (end_t - start_t) * 1000
-    await ag.edit(f"Pong!\n{time_taken_s:.3f} ms")
+
     
     
     
